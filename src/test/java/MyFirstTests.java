@@ -27,7 +27,11 @@ import static org.junit.Assert.*;
         public void testArrayEquality(){
             int[] startArray = {1, 2, 3, 4};
             int[] endArray = {2, 3, 4, 5};
-            assertArrayEquals();
+            int[] startArray2 = {1, 2, 3, 4};
+            int[] endArray2 = {11, 12, 13, 14};
+
+            assertArrayEquals(endArray, calculator.addInArray(1, startArray));
+            assertArrayEquals(endArray2, calculator.addInArray(10, startArray2));
         }
 
 

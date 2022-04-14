@@ -5,5 +5,12 @@ public class Calculator {
     public double calculateTip(double price,double percentage){
         return (price * (percentage/100));
     }
+    public int[] addInArray(int numberToAdd , int[] startArray){
+
+        for (int i = 0; i < startArray.length; i++) {
+            startArray[i] += numberToAdd;
+        }
+        return startArray;
+    }
 
 }
