@@ -5,4 +5,5 @@ public class Calculator {
     public double calculateTip(double price,double percentage){
         return (price * (percentage/100));
     }
+
 }
